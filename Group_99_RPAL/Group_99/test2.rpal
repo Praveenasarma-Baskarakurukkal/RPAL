@@ -1,0 +1,8 @@
+let Greatest_value (a,b,c) =
+	Find_max (a,b,c)
+where rec Find_max (a,b,c) = (a gr b) & (a gr c)
+	->a
+	| b gr c
+	->b
+	|c
+ in Print(Greatest_value(26,2,14))
